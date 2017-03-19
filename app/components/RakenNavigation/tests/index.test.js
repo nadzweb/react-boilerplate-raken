@@ -8,6 +8,7 @@ describe('<RakenNavigation />', () => {
     const renderedComponent = shallow(
       <RakenNavigation />
     );
-    expect(renderedComponent.find('div').length).toEqual(1);
+    expect(renderedComponent.prop('className')).toBeDefined();
+    expect(renderedComponent.find('.raken-nav-wrap')).toBeDefined();
   });
 });
